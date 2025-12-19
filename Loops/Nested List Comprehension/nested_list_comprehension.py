@@ -1,6 +1,6 @@
 string = '0123456789'
 
-matrix = ['TODO']
+matrix = [[i for i in string] for k in string]
 
 for row in matrix:
     print(row)
