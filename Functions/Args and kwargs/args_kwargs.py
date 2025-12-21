@@ -1,3 +1,6 @@
+from cmath import phase
+
+
 def random_dialogue(place, *args, **kwargs):
     print("-- Do you know how to get to the", place, "?")
     print("-- I'm sorry, I am not from here, no idea about the", place)
@@ -30,11 +33,11 @@ def cat(food, *args, state='still hungry', action='meow', breed='Siamese'):
 
 
 # Declare a list of phrases that will be capitalized according to the task description
-phrases = [???]
+phrases = ["It is too fat", 'you are feeding your cat too much']
 
 # Declare a dict of keyword arguments to insert into the narrative.
 # The keys should match the named arguments of the cat() function.
-keywords = {???}
+keywords = {"state":"fat", "action":"eat", "breed":"Main Coon"}
 
 # Call the cat() function like in the example above, with some food, phrases, and keywords to print the required output.
-cat(???)
+cat("anything", *phrases, **keywords)
